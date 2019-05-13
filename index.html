@@ -43,7 +43,57 @@ html,body{height:100%}
 		background-size: 100%;
 }
 
+#imgeb {
+
+	width:579px;
+	height:580px;
+ position: relative;
+
+	
+}
+
+
+#imgeb::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+opacity:0.6;
+background-position:center;
+background-image:url(2.jpg);
+			background-size: 100%;
+	transition: .2s ease-out;
+;
+}
+
+
+
+
+#imgeb:hover::before {
+		opacity: 1.0;
+		background-size: 130%;
+}
+
+.title {
+	
+	font-family: "Fredoka One", Verdana, Geneva, sans-serif;
+	color:#FFF;
+	font-size:72px;
+	position:relative;
+	height:580px;
+  display: table
+	
+
+	
+}
+
+span {
+ display: table-cell;
+    vertical-align: middle;
+}
+
 </style>
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
 </head>
 
 <body>
@@ -67,6 +117,24 @@ html,body{height:100%}
               <td width="21">&nbsp;</td>
               <td width="280">&nbsp;</td>
         <td width="10">&nbsp;</td>      
+            </tr>
+          </table>
+          <table width="1200" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td height="192">&nbsp;</td>
+            </tr>
+          </table>
+          <table width="1200" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="9">&nbsp;</td>
+              <td width="579" height="580" bgcolor="#1DB5E0"><table width="579" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td height="580" align="center" valign="middle" bgcolor="#3FBAE9"><div id="imgeb" >
+                    <div class="title"><span >MOVIES</span></div>
+                  </div></td>
+                </tr>
+              </table></td>
+              <td width="612">&nbsp;</td>
             </tr>
           </table></td>
       </tr>
